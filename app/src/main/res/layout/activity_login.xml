@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/app_all_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <LinearLayout
+        android:layout_marginTop="-100dp"
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="30sp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/lachinlogoImage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/app_lock_logo" />
+
+        <TextView
+            android:id="@+id/txtShowNote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50sp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textSize="30sp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/UserPin"
+            android:textColorHint="@color/white3"
+            app:boxStrokeColor="@android:color/black"
+            app:boxBackgroundColor="@android:color/white"
+            app:hintEnabled="true"
+            app:hintAnimationEnabled="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etxtPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLoginSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:shadowRadius="2"
+            android:backgroundTint="@android:color/black"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/login"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/ic_lock_pen"
+            android:drawableTint="@color/white"/>
+
+
+
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/txtHideClick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp"
+            android:gravity="center_horizontal"
+            android:text="@string/info"
+            android:padding="5dp"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

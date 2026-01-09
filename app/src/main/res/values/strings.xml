@@ -1,0 +1,192 @@
+<resources>
+    <string name="app_name">RainBoot</string>
+    <string name="developer_name">محمدیعقوب رحمانی</string>
+    <string name="developer_name_reklam">تیارلان محمد یعقوب رحمانی</string>
+    <string name="hadith">حدیث</string>
+    <string name="UserName">username</string>
+    <string name="UserPin">password</string>
+    <string name="search">جستجو</string>
+    <string name="login">LOGIN</string>
+    <string name="info">بیشتر ...</string>
+    <string name="infoNote">توجه: اگر در هنگام استفاده از برنامه با مشکلاتی روبرو شدید، لطفاً بدون تردید با مدیریت فنی تماس بگیرید تا مشکل شما به سرعت بررسی و حل شود. شماره تماس مدیریت فنی: 0789505257"</string>
+    <string name="infoNote2">لطفاً برنامه را حذف نکنید تا معاملات شما از بین نرود.</string>
+
+    <string name="infoHome">دوکان</string>
+    <string name="infoUser">اشخاص</string>
+    <string name="infoShare">معاملات</string>
+    <string name="infoCash">پرداخت‌ها</string>
+
+    <string name="fromDate">تا تاریخ</string>
+    <string name="toDate">از تاریخ</string>
+
+
+    <string name="infoDashboardFragmentTitle">صفحه اصلی</string>
+    <string name="infoDashboardFragmentTitleShort">خلاصه معاملات شما</string>
+
+    <string name="infoHomeFragmentTitle">اجناس (دوکان)</string>
+    <string name="infoHomeFragmentTitleShort">اجناس یکه شما خرید و فروش میکنید</string>
+
+    <string name="infoSaleFragmentTitle">معاملات اجناس</string>
+    <string name="infoSaleFragmentTitleShort">اجناس خریداری شده و فروخته شده</string>
+
+
+    <string name="infoUserFragmentTitle">مشتریان (اشخاص)</string>
+    <string name="infoUserFragmentTitleShort">اشخاصیکه همرایش معاملات نقدی دارید</string>
+
+
+    <string name="cashFragmentTitle">معاملات نقدی ( پرداخت ها )</string>
+    <string name="cashFragmentShortTitle">داد و گرفت معاملات نقدی</string>
+
+
+    <string name="iAddProduct">ثبت جنس</string>
+    <string name="iAddUser">ثبت شخص</string>
+    <string name="iAddPassword">رمز جدید</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="dyalog_home">صفحه اصلی</string>
+    <string name="dyalog_product">ثبت جنس</string>
+    <string name="dyalog_user">ثبت شخص</string>
+    <string name="dyalog_password">تبدیل رمز عبور</string>
+    <string name="dyalog_backup">ارسال دیتابیس به سرور آنلاین</string>
+
+
+    <string name="save">ثبت</string>
+    <string name="cancel">لغو</string>
+    <string name="productName">اسم جنس</string>
+    <string name="productQuantity">تعداد</string>
+    <string name="productPrice">تمام شد</string>
+    <string name="productDescription">توضیحات</string>
+
+    <string name="userName">اسم شخص</string>
+    <string name="userMobile">مبایل</string>
+    <string name="userAdders">آدرس</string>
+
+    <string name="userFirstName">اسم و تخلص</string>
+    <string name="userPassword">رمز عبور</string>
+    <string name="product_item_price">قیمت خرید</string>
+    <string name="product_item_count">تعداد موجود</string>
+
+    <string name="product_item_count_sale">فروش جنس</string>
+    <string name="product_item_count_add">ثبت خرید</string>
+    <string name="product_item_edit">ویرایش</string>
+    <string name="product_item_count_profile">بیشتر</string>
+    <string name="delete">حذف</string>
+
+    <string name="customer_update">ویرایش مشتری</string>
+    <string name="update">ویرایش</string>
+    <string name="product_update">ویرایش جنس</string>
+    <string name="product_add_price">قیمت</string>
+
+    <string name="amount">مبلغ</string>
+    <string name="withdrawalSave">ثبت باقی</string>
+    <string name="depositSave">ثبت رسید</string>
+    <string name="removeUser">حذف شخص</string>
+
+
+    <string name="statusSubmit">حسابی شد</string>
+
+    <string name="dashboardPrice1">سرمایه</string>
+    <string name="dashboardPrice2">تعداد خریداری</string>
+    <string name="dashboardPrice3">مبلغ خریداری</string>
+    <string name="dashboardPrice4">تعداد فروش</string>
+    <string name="dashboardPrice5">مبلغ فروش</string>
+    <string name="dashboardPrice6">ضرر فروش</string>
+    <string name="dashboardPrice7">مفاد فروش</string>
+    <string name="dashboardPrice8">خلاصه مفاد</string>
+
+    <string name="dashboardPrice9">باقی ثبت شده</string>
+    <string name="dashboardPrice10">رسید ثبت شده</string>
+    <string name="dashboardPrice11">طلب اشخاص</string>
+    <string name="dashboardPrice12">باقی اشخاص</string>
+
+    <string name="submitMobile">دریافت کود</string>
+    <string name="submitCode">تائید کود</string>
+    <string name="code">کود</string>
+
+    <string name="mobileInfo">مبایل خود را وارد کنید.</string>
+    <string name="sendDatabase">ارسال</string>
+
+    <string name="db_import_title">بارگذاری دیتابیس</string>
+    <string name="db_backup_title">پشتیبان‌گیری دیتابیس</string>
+    <string name="db_backup_success">پشتیبان در Downloads ذخیره شد.</string>
+    <string name="db_backup_failed">ساخت پشتیبان ناکام شد.</string>
+
+    <string name="filter_title_fa">جستجو و فیلتر</string>
+    <string name="filter_from_date_fa">تاریخ شروع</string>
+    <string name="filter_to_date_fa">تاریخ ختم</string>
+    <string name="filter_flow_type_fa">نوع</string>
+    <string name="filter_apply_fa">فیلتر</string>
+    <string name="filter_clear_fa">پاک کردن فیلتر</string>
+
+    <string name="db_tools_title_fa">مدیریت دیتابیس</string>
+    <string name="db_tools_all_report_title">گزارشات / PDF</string>
+    <string name="db_tools_export_downloads_fa">دانلود فایل دیتابیس</string>
+    <string name="db_tools_import_file_fa">فایل / دیتابیس</string>
+    <string name="db_tools_send_online_fa">ارسال به سرور آنلاین</string>
+
+    <string name="pin_title_fa">تأیید رمز</string>
+    <string name="pin_subtitle_fa">برای ادامه، رمز ۴ رقمی را وارد کنید.</string>
+    <string name="pin_hint_fa">رمز ۴ رقمی</string>
+    <string name="close">بستن</string>
+    <string name="filter_subtitle_fa">جستجو و فیلتر را تنظیم کنید.</string>
+
+    <string name="filter">فیلتر</string>
+    <string name="pdf_export">خروجی PDF</string>
+
+    <string name="filter_title">فیلتر</string>
+    <string name="flow_type">نوع</string>
+
+
+    <string name="apply">اعمال</string>
+    <string name="clear">پاک کردن</string>
+
+    <string name="pdf_scope">محدوده</string>
+    <string name="pdf_filtered">فقط نتایج فعلی (فیلتر شده)</string>
+    <string name="pdf_all">همه اطلاعات</string>
+
+
+
+    <!-- Header -->
+    <string name="cash_title">پول نقد</string>
+    <string name="action_search">جستجو</string>
+    <string name="action_filter">فیلتر</string>
+    <string name="action_pdf">PDF</string>
+
+    <!-- Search -->
+    <string name="search_hint">جستجو...</string>
+
+    <!-- Filter -->
+    <string name="filter_apply">اعمال</string>
+    <string name="filter_clear">پاک کردن</string>
+
+    <!-- Flow types -->
+    <string name="flow_all">همه</string>
+    <string name="flow_out">خروجی‌ها</string>
+    <string name="flow_in">ورودی‌ها</string>
+
+    <!-- PDF -->
+    <string name="pdf_title">گزارش PDF را انتخاب کنید</string>
+    <string name="pdf_scope_title">دامنه</string>
+    <string name="pdf_scope_filtered">فقط نتایج فعلی (فیلتر شده)</string>
+    <string name="pdf_scope_all">همه اطلاعات</string>
+    <string name="confirm">تأیید</string>
+    <string name="pdf_create">PDF</string>
+
+    <!-- Summary -->
+    <string name="summary_template">تعداد: %1$d  |  مجموع: %2$.2f</string>
+
+
+    <string name="pdf_scope_filtered_short_fa">فیلتر</string>
+    <string name="pdf_scope_all_short_fa">همه</string>
+
+    <string name="filter_from_required_fa">ابتدا از تاریخ را انتخاب کنید</string>
+    <string name="filter_to_must_be_after_from_fa">تا تاریخ نباید قبل از از تاریخ باشد</string>
+    <string name="filter_invalid_date_fa">تاریخ نامعتبر است</string>
+
+    <string name="flow_all_fa">همه</string>
+    <string name="flow_out_fa">خروجی‌ها</string>
+    <string name="flow_in_fa">ورودی‌ها</string>
+
+
+
+</resources>

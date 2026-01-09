@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="flow_types_fa">
+        <item>@string/flow_all</item>
+        <item>@string/flow_out</item>
+        <item>@string/flow_in</item>
+    </string-array>
+</resources>

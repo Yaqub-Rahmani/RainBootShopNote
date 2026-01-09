@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "59975087457",
+    "project_id": "myfirstproject-45bc3",
+    "storage_bucket": "myfirstproject-45bc3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59975087457:android:659be3d514c12365404120",
+        "android_client_info": {
+          "package_name": "com.example.rainbootshopnote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59975087457-pa4f55bet0b663dv5ggp3q2o002i3na1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUpF39PaT5q047vw_SCKvcwvDUtwyMxqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59975087457-pa4f55bet0b663dv5ggp3q2o002i3na1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

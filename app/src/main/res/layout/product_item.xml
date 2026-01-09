@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white2"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl">
+
+    <LinearLayout
+        android:id="@+id/layout_item_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl">
+
+        <!-- Top row: NAME on RIGHT, TAG on LEFT -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl">
+
+            <!-- Name (RIGHT in RTL = START) -->
+            <TextView
+                android:id="@+id/txt_item_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="4dp"
+                android:text="@string/productName"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textDirection="rtl"
+                android:textAlignment="viewStart" />
+
+            <!-- Tag (LEFT in RTL = END) -->
+            <TextView
+                android:id="@+id/txt_item_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="4dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textStyle="bold"
+                android:text="@string/productName"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:textDirection="rtl" />
+
+        </RelativeLayout>
+
+        <!-- Bottom row: PRICE/COUNT on RIGHT, DATE/WIN on LEFT -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl">
+
+            <!-- Count (RIGHT in RTL = START) -->
+            <TextView
+                android:id="@+id/txt_item_info_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/product_item_count"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textDirection="rtl" />
+
+            <!-- Price next to count (towards center): toEndOf count -->
+            <TextView
+                android:id="@+id/txt_item_info_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/txt_item_info_count"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/productPrice"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textDirection="rtl" />
+
+            <!-- Date (LEFT in RTL = END) -->
+            <TextView
+                android:id="@+id/txt_item_info_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/productPrice"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textDirection="ltr"
+                android:textAlignment="viewEnd" />
+
+            <!-- Win next to date (towards center): toStartOf date -->
+            <TextView
+                android:id="@+id/txt_item_info_win"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/txt_item_info_date"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/productPrice"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textDirection="rtl"
+                android:textAlignment="viewEnd" />
+
+        </RelativeLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#14000000" />
+
+    </LinearLayout>
+
+</RelativeLayout>

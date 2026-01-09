@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    tools:context=".HomeFragment">
+
+    <!-- Shared header (same used in CashCoinsFragment) -->
+    <include
+        android:id="@+id/includeHeader"
+        layout="@layout/view_header_actions" />
+
+    <!-- Short info -->
+    <TextView
+        android:id="@+id/txtItemShortInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-3dp"
+        android:padding="6dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl"
+        android:textAlignment="center"
+        tools:text="| سرمایه: 0.00 | تعداد: 0 |" />
+
+    <!-- List -->
+    <ListView
+        android:id="@+id/list_view_products"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/iAddProduct"
+        android:title="@string/iAddProduct"
+        android:icon="@drawable/ic_add"/>
+    <item
+        android:id="@+id/iAddUser"
+        android:title="@string/iAddUser"
+        android:icon="@drawable/ic_add"/>
+    <item
+        android:id="@+id/iAddPassword"
+        android:title="@string/iAddPassword"
+        android:icon="@drawable/ic_add"/>
+
+</menu>

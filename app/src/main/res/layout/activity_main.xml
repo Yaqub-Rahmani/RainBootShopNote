@@ -1,0 +1,52 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_all_back"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"/>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="2dp"
+        app:fabCradleRoundedCornerRadius="6dp"
+        app:backgroundTint="@android:color/white">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu"
+            app:itemTextColor="@color/black"
+            app:itemIconTint="@color/black"
+            app:itemBackground="@android:color/transparent"
+            app:itemRippleColor="@android:color/transparent"/>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/white2"
+        android:importantForAccessibility="no"
+        android:src="@drawable/icon_app_add"
+        app:maxImageSize="45dp"
+        app:elevation="0dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"
+        app:backgroundTint="@color/white2"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

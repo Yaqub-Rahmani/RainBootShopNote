@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white2"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl">
+
+        <!-- RIGHT (RTL START): Icon + Name -->
+        <LinearLayout
+            android:id="@+id/user_name_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl">
+
+            <ImageView
+                android:id="@+id/img_user_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_more"
+                android:contentDescription="@string/userName"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/txt_user_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/UserPin"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textDirection="rtl"
+                android:textAlignment="viewStart" />
+        </LinearLayout>
+
+        <!-- LEFT (RTL END): Status + Mobile (stacked) -->
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl">
+
+            <TextView
+                android:id="@+id/txt_item_status_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="2dp"
+                android:paddingHorizontal="10dp"
+                android:background="@drawable/bg_chip_soft_1"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:text="0.00"
+                android:textDirection="ltr"
+                android:textAlignment="viewEnd" />
+
+            <TextView
+                android:id="@+id/txt_user_item_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:paddingVertical="2dp"
+                android:paddingHorizontal="10dp"
+                android:background="@drawable/bg_chip_soft_2"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:text="0700000000"
+                android:textDirection="ltr"
+                android:textAlignment="viewEnd" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

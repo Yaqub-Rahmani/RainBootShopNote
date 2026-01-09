@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:background="@color/white2">
+
+    <!-- IMPORTANT: include'a ID verdik (CashCoinsFragment bunu buluyor) -->
+    <include
+        android:id="@+id/includeHeader"
+        layout="@layout/view_header_actions" />
+
+    <!-- IMPORTANT: ID, fragment koduyla aynı olmalı -->
+    <TextView
+        android:id="@+id/txtItemShortInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-3dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textColor="#111111"
+        android:textSize="14sp"
+        android:text="@string/cash_title" />
+
+    <ListView
+        android:id="@+id/cash_info_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="10dp" />
+
+</LinearLayout>

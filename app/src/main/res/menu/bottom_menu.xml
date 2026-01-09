@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ihome"
+        android:title="@string/infoHome"
+        android:icon="@drawable/app_icon_house"/>
+
+    <item
+        android:id="@+id/iuser"
+        android:title="@string/infoUser"
+        android:icon="@drawable/app_icon_users"/>
+
+    <item
+        android:id="@+id/fabb"
+        android:title=""
+        android:enabled="false"/>
+
+    <item
+        android:id="@+id/ishare"
+        android:title="@string/infoShare"
+        android:icon="@drawable/app_icon_shopping_basket"/>
+
+    <item
+        android:id="@+id/isetting"
+        android:title="@string/infoCash"
+        android:icon="@drawable/app_icon_wallet"/>
+
+
+</menu>
+

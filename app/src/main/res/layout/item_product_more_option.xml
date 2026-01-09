@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_product_more_option"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@color/white"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl">
+
+        <TextView
+            android:id="@+id/txt_item_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/delete"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:background="@color/white3"
+            android:drawableStart="@drawable/icon_app_store"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl" />
+
+        <Button
+            android:id="@+id/btn_item_product_sale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/icon_app_store"
+            android:text="@string/product_item_count_sale"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white2"
+            android:textAlignment="viewStart"
+            android:gravity="center_vertical|start"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl" />
+
+        <Button
+            android:id="@+id/btn_item_product_add_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/icon_app_pdf"
+            android:text="@string/product_item_count_add"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white2"
+            android:textAlignment="viewStart"
+            android:gravity="center_vertical|start"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl" />
+
+        <Button
+            android:id="@+id/btn_item_product_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/icon_app_edit"
+            android:text="@string/product_item_edit"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white2"
+            android:textAlignment="viewStart"
+            android:gravity="center_vertical|start"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl" />
+
+        <Button
+            android:id="@+id/btn_item_product_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/icon_app_delete"
+            android:text="@string/delete"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white2"
+            android:textAlignment="viewStart"
+            android:gravity="center_vertical|start"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl" />
+
+    </LinearLayout>
+
+</RelativeLayout>

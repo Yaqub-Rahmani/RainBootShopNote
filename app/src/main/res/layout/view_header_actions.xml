@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:paddingStart="6dp"
+    android:paddingEnd="6dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="8dp"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_row_soft_gray">
+
+        <TextView
+            android:id="@+id/txtHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/filter_title"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#111111" />
+
+        <LinearLayout
+            android:id="@+id/header_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:layoutDirection="ltr">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnHeaderSearch"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="6dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_search"
+                android:contentDescription="@string/search"
+                android:scaleType="centerInside" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnHeaderFilter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="6dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/icon_app_filter"
+                android:contentDescription="@string/filter"
+                android:scaleType="centerInside" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnHeaderPdf"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="6dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/icon_app_pdf"
+                android:contentDescription="@string/pdf_export"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ECECEC" />
+
+    <!-- Collapsible search -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:visibility="gone"
+        android:hint="@string/search"
+        android:layoutDirection="rtl"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etHeaderSearch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:textColor="#111111"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

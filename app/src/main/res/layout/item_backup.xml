@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@color/white"
+    tools:context=".add_backup">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/white2"
+            android:text="@string/dyalog_backup"
+            android:textSize="18sp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/outItemHideCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp"
+            android:gravity="right">
+
+            <TextView
+                android:layout_marginVertical="15dp"
+                android:id="@+id/txtItemHideCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/delete"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outItemCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/code"
+                app:boxStrokeColor="@android:color/black"
+                app:boxBackgroundColor="@android:color/white"
+                app:hintEnabled="true"
+                app:hintAnimationEnabled="true"
+                android:layout_marginBottom="20dp"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtItemCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:maxLength="6"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/outItemHideMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp"
+            android:gravity="right">
+
+            <TextView
+                android:layout_marginVertical="15dp"
+                android:id="@+id/txtItemHideMobile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/mobileInfo"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outItemMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/userMobile"
+                app:boxStrokeColor="@android:color/black"
+                app:boxBackgroundColor="@android:color/white"
+                app:hintEnabled="true"
+                app:hintAnimationEnabled="true"
+                android:layout_marginBottom="20dp"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtItemMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:maxLength="25"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/MobileSubmit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:shadowRadius="2"
+                android:backgroundTint="@android:color/black"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/submitMobile"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"/>
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/CodeSubmit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:shadowRadius="2"
+                android:backgroundTint="@android:color/black"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/submitCode"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/CancelProductSubmit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:shadowRadius="2"
+                android:backgroundTint="@color/white2"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/cancel"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

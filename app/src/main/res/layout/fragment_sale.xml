@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/saleRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl">
+
+    <!-- Same header include used by CashCoinsFragment -->
+    <include
+        android:id="@+id/includeHeader"
+        layout="@layout/view_header_actions" />
+
+    <!-- Short info -->
+    <TextView
+        android:id="@+id/txtItemShortInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-3dp"
+        android:padding="6dp"
+        android:text=" |  | "
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <!-- List -->
+    <ListView
+        android:id="@+id/product_sale_info_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:padding="10dp"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl" />
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white2"
+    android:layoutDirection="ltr">
+
+    <LinearLayout
+        android:id="@+id/layout_item_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layoutDirection="ltr">
+
+        <!-- TOP ROW: tag LEFT, name RIGHT -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layoutDirection="ltr">
+
+            <!-- Tag: LEFT -->
+            <TextView
+                android:id="@+id/txt_item_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="4dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textStyle="bold"
+                android:text="@string/productName"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:textSize="13sp"
+                android:textDirection="rtl" />
+
+            <!-- Name: RIGHT -->
+            <TextView
+                android:id="@+id/txt_item_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="4dp"
+                android:text="@string/productName"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textDirection="rtl"
+                android:textAlignment="viewEnd" />
+
+        </RelativeLayout>
+
+        <!-- BOTTOM ROW: date+win LEFT, price+count RIGHT (no overlap) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layoutDirection="ltr">
+
+            <!-- RIGHT BLOCK: count (right edge) -->
+            <TextView
+                android:id="@+id/txt_item_info_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/product_item_count"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textDirection="rtl" />
+
+            <!-- RIGHT BLOCK: price to the left of count -->
+            <TextView
+                android:id="@+id/txt_item_info_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/txt_item_info_count"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/productPrice"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textDirection="rtl" />
+
+            <!-- LEFT BLOCK: date (LEFT), but constrained to stay before price -->
+            <TextView
+                android:id="@+id/txt_item_info_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/txt_item_info_price"
+                android:layout_marginEnd="6dp"
+                android:text="@string/productPrice"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textDirection="ltr"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAlignment="viewStart" />
+
+            <!-- LEFT BLOCK: win next to date, also constrained before price -->
+            <TextView
+                android:id="@+id/txt_item_info_win"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/txt_item_info_date"
+                android:layout_toStartOf="@+id/txt_item_info_price"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/productPrice"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textDirection="rtl"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAlignment="viewStart" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
