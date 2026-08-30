@@ -44,3 +44,18 @@ token ve sabit parola örüntüleri; ilgili APK'da bilinen parolanın varlık ko
 asset DB'de salt okunur kayıt sayımları. `google-services.json` Android istemci
 yapılandırmasıdır; service-account özel anahtarı olarak sınıflandırılmadı.
 Bu tarama bütün sır türlerinin veya geçmişteki tüm binary içeriklerin yokluğunu kanıtlamaz.
+
+## Başlangıç kaydından sonraki dar güvenlik temizliği
+
+Başlangıç commit'i `135a64467b6b43f15682454fc6ee505e3fde9093` aynen korunmuştur.
+Sonraki ayrı temizlikte, etkin çağrı/import'u bulunmayan `EmailSender.java` ile yalnız
+ona ait `javax.mail` ve `activation` bağımlılıkları kaldırılmıştır. Yerel yedek ve
+Firebase yedeği başka sınıflarda çalışır; bu akışların kodu değiştirilmemiştir.
+Bu, yukarıdaki tarihsel başlangıç kaydının kapsamını geriye dönük değiştirmez.
+
+Canlı uzak dal okumasında `origin/main`,
+`2022c75e7cc83174512e8c8088ed5769f26706e7` olarak doğrulanmıştır; gömülü SMTP sırrının
+aynı kaynak blobu bu uzak commit'te zaten bulunmaktadır. Güncel kaynak temizliği eski
+Git geçmişini, yereldeki/dağıtılmış APK'ları veya kimlik bilgisinin geçerliliğini
+değiştirmez. Hesaba erişilmemiş, parola denenmemiş/iptal edilmemiş, geçmiş yeniden
+yazılmamıştır. Derleme, APK yayını veya veri koruyan güncelleme testi iddiası yoktur.
