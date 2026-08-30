@@ -74,8 +74,16 @@ public class LoginActivity extends AppCompatActivity {
         loginAdmin = db.getLastOrDefaultAdmin();
         int note = Integer.parseInt(loginAdmin.getUser_password());
 
-        // if status true => show pin
-        if (loginAdmin.getStatus()) txtShowPin.setText(String.valueOf(note));
+        // PIN'i yalnızca admins tablosu boşken üretilen geçici admin için göster.
+        // Veritabanından gelen gerçek admin kaydının PIN'i giriş ekranında görünmemeli.
+        boolean isGeneratedPin = loginAdmin.getAdmin_id() == -1;
+        if (isGeneratedPin) {
+            txtShowPin.setText(String.valueOf(note));
+            txtShowPin.setVisibility(View.VISIBLE);
+        } else {
+            txtShowPin.setText("");
+            txtShowPin.setVisibility(View.GONE);
+        }
 
         // --- PIN submit ---
         btnSubmit.setOnClickListener(new View.OnClickListener() {
